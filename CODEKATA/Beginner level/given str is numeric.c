@@ -1,12 +1,27 @@
 #include <stdio.h>
+#include<string.h>
 int main() 
 {
-    int n;
-    scanf("%d",&n);
-    if(n>=0 && n<=100000)
+    char a[10];
+    int flag=0,i;
+    scanf("%s",a);
+    int n=strlen(a);
+    for(i=0;i<n;i++)
     {
-        printf("yes\n");
-        printf("given string is numeric");
+        if(a[i]>='0'&&a[i]<='9')
+        {
+            flag=0;
+        }
+        else
+        {
+            flag=1;
+            printf("no");
+            break;
+        }
     }
-	return 0;
+    if(flag==0)
+    {
+        printf("yes");
+    }
+    return 0;
 }
