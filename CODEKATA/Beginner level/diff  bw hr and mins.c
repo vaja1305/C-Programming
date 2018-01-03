@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<math.h>
 int main() 
 {
 	int mins[2],hour[2],min,hr,i;
@@ -7,11 +6,8 @@ int main()
 	{
 	scanf("%d %d",&hour[i],&mins[i]);
 	}
-	for(i=0;i<2;i++)
-	{
-	    hr=hour[i]-hour[i+1];
-	    min=mins[i]-mins[i+1];
-	}
+    hr=hour[0]-hour[1];
+	min=mins[0]-mins[1];
 	printf("%d %d",hr,min);
 	return 0;
 }
