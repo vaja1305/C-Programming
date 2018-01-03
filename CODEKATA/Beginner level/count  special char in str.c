@@ -8,9 +8,13 @@ int main()
 	n=strlen(a);
 	for(i=0;i<n;i++)
 	{
-	   if(a[i]>='0' && a[i]<='9')
+	   if(a[i]>='0'&&a[i]<='9')
 	    {
 	        count++;
+	    }
+	    else
+	    {
+	        continue;
 	    }
 	}
 	printf("%d",count);
