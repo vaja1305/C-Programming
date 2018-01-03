@@ -1,13 +1,26 @@
 #include <stdio.h>
-int main() 
+
+int main()
 {
-	int mins[2],hour[2],min,hr,i;
+	int hr[2],mins[2],i,min,hour,diff,res[2];
 	for(i=0;i<2;i++)
 	{
-	scanf("%d %d",&hour[i],&mins[i]);
+	    scanf("%d %d",&hr[i],&mins[i]);
 	}
-        hr=hour[0]-hour[1];
-	min=mins[0]-mins[1];
-	printf("%d %d",hr,min);
+	for(i=0;i<2;i++)
+	{
+	    res[i]=(hr[i]*60)+mins[i];
+	}
+	if(res[0]>res[1])
+	{
+	    diff=res[0]-res[1];
+	}
+	else
+	{
+	    diff=res[1]-res[0];
+	}
+	hour=diff/60;
+	min=diff%60;
+	printf("%d %d",hour,min);
 	return 0;
 }
