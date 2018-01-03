@@ -1,7 +1,7 @@
 #include<stdio.h>        
 int main()
 {
-    int n,a[10],i,max=0;
+    int n,a[10],i,max=-999;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
