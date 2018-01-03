@@ -6,7 +6,7 @@ int main()
 	{
 	scanf("%d %d",&hour[i],&mins[i]);
 	}
-    hr=hour[0]-hour[1];
+        hr=hour[0]-hour[1];
 	min=mins[0]-mins[1];
 	printf("%d %d",hr,min);
 	return 0;
