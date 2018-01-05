@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() 
 {
 	int n,temp=0,count=0,i;
