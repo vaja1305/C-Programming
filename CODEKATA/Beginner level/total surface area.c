@@ -1,9 +1,11 @@
 #include <stdio.h>
 int main()
 {
-	int l,b,h,tsa;
+	int l,b,h,tsa,volume;
 	scanf("%d %d %d",&l,&b,&h);
-	tsa=l*b*h;
-	printf("%d",tsa);
+	volume=l*b*h;
+	tsa=2*((l*b)+(b*h)+(h*l));
+	printf("volume=%d\n",volume);
+	printf("TSA=%d",tsa);
 	return 0;
 }
