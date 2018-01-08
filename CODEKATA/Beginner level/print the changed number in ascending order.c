@@ -15,7 +15,7 @@ int main()
         }
         else
         {
-            printf("%d",a[i]);
+            printf("%d",i+1);
         }
    }
 	return 0;
