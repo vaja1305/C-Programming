@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {
-  int num,n=0,i;
+  int num,n,i;
   int count=0;
   scanf("%d\n",&num);
   n=num;
-  while(n>0)
+  while(n!=0)
   {
      count++; 
      n=n/10;
