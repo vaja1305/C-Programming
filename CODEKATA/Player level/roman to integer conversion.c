@@ -2,7 +2,7 @@
 #include<string.h>
 int main() 
 {
-    int n,i,res,b[20],decimal=0;
+    int n,i,res,b[20],integer=0;
     char a[10];
     scanf("%s",a);
     n=strlen(a);
@@ -33,8 +33,8 @@ int main()
         {
         	res=b[i]+b[i+1];
         }
-    decimal=res+decimal;
+    integer=res+integer;
     }
-    printf("%d",decimal);
+    printf("%d",integer);
     return 0;
 }
