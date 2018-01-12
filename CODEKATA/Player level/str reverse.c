@@ -1,14 +1,17 @@
 #include <stdio.h>
 #include<string.h>
-int main() 
+int main()
 {
 	char a[100];
-	int i,n;
+	int n,temp,i,j;
 	scanf("%s",a);
 	n=strlen(a);
-	for(i=(n-1);i>=0;i--)
+	for(i=n-1,j=0;i>n/2,j<n/2;i--,j++)
 	{
-	    printf("%c",a[i]);
+	    temp=a[i];
+	    a[i]=a[j];
+	    a[j]=temp;
 	}
+	printf("%s",a);
 	return 0;
 }
