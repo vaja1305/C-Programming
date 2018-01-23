@@ -21,7 +21,7 @@ count++;
 }   
 }    	
 if(count==1)  
-{    	    p
+{    	    
 printf("yes..differ by 1 character");    
 }	
 }
