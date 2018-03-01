@@ -1,33 +1,27 @@
 #include <stdio.h>
 int main() 
 {
-    int a[10],k,temp=0,i=0,p,n,max=0;
+    int a[10],k,i=0,p,n,j,max=0;
 	scanf("%d %d",&n,&p);
 	for(i=0;i<n;i++)
 	{
 	    scanf("%d",&a[i]);
 	}
-	for(i=0;i<n;i++)
-	{
-	   if(a[i]>=max)
-	   {
-	       max=a[i];
-	   }
-	}
-	temp=max;
-	i=0;
-    while(i<p)
+	j=0;
+    while(j<p)
 	{
 	    scanf("%d",&k);
-	    if(k>=temp)
+	    a[n]=k;
+	    n++;
+	   for(i=0;i<n;i++)
 	    {
-	        printf("%d ",k);
+	        if(a[i]>=max)
+	        {
+	            max=a[i];
+	        }
 	    }
-	    else
-	    {
-	        printf("%d ",temp);
-	    }
-	i++;
-	} 
+	    printf("%d ",max); 
+	j++; 
+	}
 	return 0;
 }
